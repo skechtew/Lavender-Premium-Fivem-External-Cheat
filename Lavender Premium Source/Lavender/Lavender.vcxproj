@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{02bc8e50-943a-4183-b97a-fb1be2e4b5dd}</ProjectGuid>
+    <RootNamespace>Lavender</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <ProjectName>Lavender FiveM Premium Cheetos</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)\Lavender\Cheat\FivemSDK;$(SolutionDir)\Lavender;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;$(SolutionDir)\Lavender\Main\FivemSDK;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)$(ProjectName)\;$(SolutionDir)$(ProjectName)\FrameWork\Dependencies\DirectX\Include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)$(ProjectName)\FrameWork\Dependencies\DirectX\Lib\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;IMGUI_DEFINE_MATH_OPERATORS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>dwmapi.lib;d3d11.lib;d3dx11.lib;ntdll.lib;winhttp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;IMGUI_DEFINE_MATH_OPERATORS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>atls.lib;dwmapi.lib;d3d11.lib;d3dx11.lib;ntdll.lib;winhttp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Main\AES.cpp" />
+    <ClCompile Include="Main\base64.cpp" />
+    <ClCompile Include="Main\Cheat.cpp" />
+    <ClCompile Include="Main\FivemSDK\Fivem.cpp" />
+    <ClCompile Include="Main\FivemSDK\Classes.hpp" />
+    <ClCompile Include="Main\MemoryAllocate\scanner.cpp" />
+    <ClCompile Include="Main\Options.hpp" />
+    <ClCompile Include="DriverMapper.cpp" />
+    <ClCompile Include="EzPdb.cpp" />
+    <ClCompile Include="Utils\Dependencies\ImGui\imgui.cpp" />
+    <ClCompile Include="Utils\Dependencies\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="Utils\Dependencies\ImGui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="Utils\Dependencies\ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="Utils\Dependencies\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="Utils\Dependencies\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="Utils\Render\Interface.cpp" />
+    <ClCompile Include="Utils\Render\Overlay.cpp" />
+    <ClCompile Include="Utils\Utilities\Memory.cpp" />
+    <ClCompile Include="Utils\Utilities\Misc.cpp" />
+    <ClCompile Include="entryPoint.cpp" />
+    <ClCompile Include="LenovoMemoryMgr.cpp" />
+    <ClCompile Include="md5.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Main\AES.h" />
+    <ClInclude Include="Main\base64.h" />
+    <ClInclude Include="Main\Cheat.hpp" />
+    <ClInclude Include="Main\FivemSDK\driver.h" />
+    <ClInclude Include="Main\FivemSDK\Fivem.hpp" />
+    <ClInclude Include="Main\FivemSDK\Offsets.hpp" />
+    <ClInclude Include="Main\FivemSDK\simplemath.h" />
+    <ClInclude Include="Main\fonts.h" />
+    <ClInclude Include="Main\images.h" />
+    <ClInclude Include="Main\MemoryAllocate\scanner.h" />
+    <ClInclude Include="Main\nlohmann\adl_serializer.hpp" />
+    <ClInclude Include="Main\nlohmann\byte_container_with_subtype.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\abi_macros.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\conversions\from_json.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\conversions\to_chars.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\conversions\to_json.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\exceptions.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\hash.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\input\binary_reader.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\input\input_adapters.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\input\json_sax.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\input\lexer.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\input\parser.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\input\position_t.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\iterators\internal_iterator.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\iterators\iteration_proxy.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\iterators\iterator_traits.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\iterators\iter_impl.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\iterators\json_reverse_iterator.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\iterators\primitive_iterator.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\json_custom_base_class.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\json_pointer.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\json_ref.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\macro_scope.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\macro_unscope.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\meta\call_std\begin.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\meta\call_std\end.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\meta\cpp_future.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\meta\detected.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\meta\identity_tag.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\meta\is_sax.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\meta\std_fs.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\meta\type_traits.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\meta\void_t.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\output\binary_writer.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\output\output_adapters.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\output\serializer.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\string_concat.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\string_escape.hpp" />
+    <ClInclude Include="Main\nlohmann\detail\value_t.hpp" />
+    <ClInclude Include="Main\nlohmann\json.hpp" />
+    <ClInclude Include="Main\nlohmann\json_fwd.hpp" />
+    <ClInclude Include="Main\nlohmann\ordered_map.hpp" />
+    <ClInclude Include="Main\nlohmann\thirdparty\hedley\hedley.hpp" />
+    <ClInclude Include="Main\nlohmann\thirdparty\hedley\hedley_undef.hpp" />
+    <ClInclude Include="Main\xorstring.h" />
+    <ClInclude Include="DriverMapper.hpp" />
+    <ClInclude Include="EzPdb.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\audiodefs.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\comdecl.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D2D1.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D2D1Helper.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D2DBaseTypes.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D2Derr.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D3D10.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D3D10effect.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\d3d10misc.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\d3d10sdklayers.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D3D10shader.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D3D10_1.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D3D10_1shader.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D3D11.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D3D11SDKLayers.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D3D11Shader.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\d3d9.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\d3d9caps.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\d3d9types.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D3Dcommon.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D3Dcompiler.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D3DCSX.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D3DX10.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\d3dx10async.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D3DX10core.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D3DX10math.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D3DX10mesh.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D3DX10tex.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D3DX11.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D3DX11async.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D3DX11core.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\D3DX11tex.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\d3dx9.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\d3dx9anim.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\d3dx9core.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\d3dx9effect.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\d3dx9math.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\d3dx9mesh.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\d3dx9shader.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\d3dx9shape.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\d3dx9tex.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\d3dx9xof.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\Dcommon.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\dinput.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\dinputd.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\dsconf.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\dsetup.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\dsound.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\DWrite.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\dxdiag.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\DxErr.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\dxfile.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\DXGI.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\DXGIFormat.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\DXGIType.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\dxsdkver.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\gameux.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\PIXPlugin.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\rmxfguid.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\rmxftmpl.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\rpcsal.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\X3DAudio.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\xact3.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\xact3d3.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\xact3wb.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\XAPO.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\XAPOBase.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\XAPOFX.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\XAudio2.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\XAudio2fx.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\XDSP.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\XInput.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\xma2defs.h" />
+    <ClInclude Include="Utils\Dependencies\DirectX\Include\xnamath.h" />
+    <ClInclude Include="Utils\Dependencies\ImGui\imconfig.h" />
+    <ClInclude Include="Utils\Dependencies\ImGui\imgui.h" />
+    <ClInclude Include="Utils\Dependencies\ImGui\imgui_impl_dx11.h" />
+    <ClInclude Include="Utils\Dependencies\ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="Utils\Dependencies\ImGui\imgui_internal.h" />
+    <ClInclude Include="Utils\Dependencies\ImGui\imgui_settings.h" />
+    <ClInclude Include="Utils\Dependencies\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="Utils\Dependencies\ImGui\imstb_textedit.h" />
+    <ClInclude Include="Utils\Dependencies\ImGui\imstb_truetype.h" />
+    <ClInclude Include="Utils\Dependencies\NlohmannJson.hpp" />
+    <ClInclude Include="Utils\FrameWork.hpp" />
+    <ClInclude Include="Utils\Math\Matrix4x4.hpp" />
+    <ClInclude Include="Utils\Math\Vectors\Vector2D.hpp" />
+    <ClInclude Include="Utils\Math\Vectors\Vector3D.hpp" />
+    <ClInclude Include="Utils\Math\Vectors\Vector4D.hpp" />
+    <ClInclude Include="Utils\Render\2t1bb.h" />
+    <ClInclude Include="Utils\Render\Interface.hpp" />
+    <ClInclude Include="Utils\Render\kaanlar.h" />
+    <ClInclude Include="Utils\Render\kitapsizbirkodyigini.h" />
+    <ClInclude Include="Utils\Render\Overlay.hpp" />
+    <ClInclude Include="Utils\Render\salbeni.h" />
+    <ClInclude Include="Utils\Security\LazyImporter.hpp" />
+    <ClInclude Include="Utils\Security\XorStr.hpp" />
+    <ClInclude Include="Utils\Utilities\Memory.hpp" />
+    <ClInclude Include="Utils\Utilities\Misc.hpp" />
+    <ClInclude Include="ldiagd.hpp" />
+    <ClInclude Include="LenovoMemoryMgr.h" />
+    <ClInclude Include="loadup.hpp" />
+    <ClInclude Include="mapper.h" />
+    <ClInclude Include="md5.h" />
+    <ClInclude Include="sysdriver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Main\FivemSDK\SimpleMath.inl" />
+    <None Include="Utils\Dependencies\DirectX\Include\D3DX10math.inl" />
+    <None Include="Utils\Dependencies\DirectX\Include\d3dx9math.inl" />
+    <None Include="Utils\Dependencies\DirectX\Include\D3DX_DXGIFormatConvert.inl" />
+    <None Include="Utils\Dependencies\DirectX\Include\xnamathconvert.inl" />
+    <None Include="Utils\Dependencies\DirectX\Include\xnamathmatrix.inl" />
+    <None Include="Utils\Dependencies\DirectX\Include\xnamathmisc.inl" />
+    <None Include="Utils\Dependencies\DirectX\Include\xnamathvector.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
